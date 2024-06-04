@@ -1,19 +1,17 @@
 <?php
-  // the navbar include for all pages
+  // the navbar component for all pages. styling in global.css  -SB
 ?>
 
-<div class="grid-container">
+<div class="grid">
+
   <div id="nav-logo">
-      <a href="/index"><img src="assets/logo.png" width="140px" height="26px" alt="Logo reading Sean Bost"></a>
-    </div>
-    <div id="nav-links">
-      <h3><a href="/index">Home</a><buffer></buffer><span>Projects<caret>v</caret>
-    <div id="nav-dropdown">
-      <div id="dropdown-links">
-        <h4 style="padding-top: 10px; padding-bottom: 10px;"><a href="/tastebuds">Taste Buds</a><br>
-        <a href="/aamd">AAMD</a></h4>
-      </div>
-    </div></span><buffer></buffer>
-    <a href="/about">About</a></h3>
+    <a href="/index"><img src="assets/logo.png" width="151px" height="28px" alt="A simple logo reading Sean Bost"></a>
   </div>
+
+  <div id="nav-links">
+    <h3 class="nav-item desktop-only"><a href="/index">Home</a></h3>
+    <h3 class="nav-item"><a href="/index#projects">Projects</a></h3>
+    <h3 class="nav-item"><a href="/about">About</a></h3>
+  </div>
+
 </div>

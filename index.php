@@ -1,74 +1,94 @@
 <!-- Written by Sean Bost -->
+<!-- Hey you! If you're reading this, let me know! seantbost@gmail.com linkedin.com/in/seanbost -->
+<!-- I'm not much of a github guy, but you can check out my files before I cheaped out and forced them to be static here:  -->
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sean Bost | UX Developer & Designer</title>
+  <title>Sean Bost | UX Developer</title>
   <link rel="shortcut icon" href="assets/icon.ico">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
-  <link rel="stylesheet" type="text/css" href="styles/dynamic.css">
-  <link rel="stylesheet" href="https://use.typekit.net/mhr1izx.css"> <!--  Adobe Fonts: Halyard & Open Sans  -->
+  <link rel="stylesheet" type="text/css" href="styles/_global.css">
+  <link rel="stylesheet" type="text/css" href="styles/home.css">
+  <link rel="stylesheet" href="https://use.typekit.net/mhr1izx.css"> <!-- Adobe Fonts: Halyard & Open Sans -->
 </head>
 
 <body>
-  <!-- navigation -->
-  <div id="page-top"></div>
+
+  <!-- navbar component -->
   <nav>
     <?php include 'includes/navbar.php';?>
   </nav>
 
-  <!-- introduction header -->
-  <header><div class="grid-container">
+  <!-- header portion of document -->
+  <header class="grid">
     <div id="header-text">
-      <h1><em>Hey! </em><a href="/about" style="color: #1b8;"><gre>I'm Sean</gre></a>.</h1>
-      <p>I'm focused on creating experiences that are engaging & meaningful. I've worked with a 
-        <a href="/about#page-red" style="color: #d44;"><red>variety of teams</red></a>
-        to make interactions easier, more efficient, and more enjoyable. While 
-        <a href="/about#page-blu" style="color: #66d;"><blu>my passion is UX</blu></a>, 
-        I also have experience marketing and
-        <a href="/about#page-ora" style="color: #c74;"><ora>building everything digital</ora></a> 
-        at a national detailing startup, plus an academic background in 
-        <a href="/about#page-pnk" style="color: #d6d;"><pnk>web design & cognition</pnk></a>.
+      <h1><em>Hey!</em> <a href="/about" class="big-expo green-expo">I'm Sean</a>.</h1>
+
+      <p>
+        I'm focused on building experiences that are engaging and meaningful. I've worked within a 
+        <a href="/about?jumpto=roles" class="small-expo red-expo underline">variety of roles and teams</a>
+        making interactions more intuitive, empowering, and enjoyable for thousands of people.
+      </p>
+
+      <p>
+        While 
+        <a href="/about?jumpto=ux" class="small-expo blue-expo underline">my passion is UX</a>, 
+        I'm also experienced in
+        <a href="/about?jumpto=fullstack" class="small-expo orange-expo underline">coding front and back-ends</a>
+        to implement designs and features, 
+        <a href="/about?jumpto=marketing" class="small-expo green-expo underline">creating marketing campaigns</a>
+        and the content to support them, and
+        <a href="/about?jumpto=systems" class="small-expo pink-expo underline">building data-driven systems</a>
+        that have doubled KPIs and shaped company-wide decisions.
       </p>
     </div>
-    <div id="header-image">
-      <a href="/about"><img src="media/home/profile.png" width="100%" alt="Sean sitting at a table with an affinity map behind him"></a>
+
+    <div id="header-image" class="desktop-only">
+      <a href="/about"><img src="media/home/profile.png" width="100%" alt="A rather dashing picture of Sean"></a>
     </div>
   </header>
 
-  <main>
-    <!-- aamd -->
-    <div class="bg-styling"><article><div class="grid-container">
-      <div class="project-img">
-          <img src="media/home/aamd-mockup.png" style="max-width: 100%;" alt="A collage of my AAMD media">
-      </div>
-      <section><br>
-        <h2>All American Mobile Detailing</h2>
-        <p>Data-driven graphics, emails and other media from my tenure that established our brand and improved engagement.</p>
-        <a href="/aamd"><div class="button">
-          View My Work
-        </div></a>
-      </section>
-    </div></article></div>
-    <br><br>
+  <!-- body/project portion of document -->
+  <main class="grid">
 
-    <!-- tastebuds -->
-    <div class="bg-styling"><article><div class="grid-container">
-      <div class="project-img">
-        <img src="media/home/tastebuds-mockup.png" style="max-width: 100%;" alt="Phones showcasing Taste Buds">
-      </div>
-      <section><br>
-        <h2>Taste Buds</h2>
-        <p>Team exploration into designing a recipe app focused on user-generated content and fixing common industry pain points.</p>
-        <a href="/tastebuds"><div class="button">
-          View Case Study
-        </div></a>
-      </section>
-    </div></article></div>    
+    <!-- Temporary note until I have more recent projects/case studies completed! (OYP app, gardening pet project, that searching algo,,,) -->
+    <section id="temp-note">
+      <p><em>Note:</em> I'm in the process of getting more recent projects presentable, but 
+      please feel free to check out some earlier work below &#8628;</p>
+    </section>
+
+    <!-- taste buds & temp projects link-->
+    <section id="projects">
+      <img src="media/home/tastebuds-mockup.png" class="project-image" alt="Three small iPhone mockups of a recipe app">
+
+      <article>
+        <h2><a href="/tastebuds">Taste Buds</a></h2>
+        <p class="caption">Spring 2022</p>
+        <p>Team exploration into designing a recipe app centered around user-generated content and fixing common industry pain points.</p>
+        <a href="/tastebuds"><h3 class="button">View Case Study</h3></a>
+      </article> 
+    </section>
+
+    <!-- aamd -->
+    <section>
+      <img src="media/home/aamd-mockup.png" class="project-image" alt="A small collage of marketing graphics">
+
+      <article>
+        <h2><a href="/aamd">All American Mobile Detailing</a></h2>
+        <p class="caption">December 2020 through September 2021</p>
+        <p>A sampling of typical content I made at AAMD for social media, recruitment, and customer retention marketing purposes.</p>
+        <a href="/aamd"><h3 class="button">View My Work</h3></a>
+      </article> 
+    </section>
+
   </main>
 
-  <!-- footer -->
-  <?php include 'includes/footer.php';?>
+  <!-- footer component -->
+  <footer>
+    <?php include 'includes/footer.php';?>
+  </footer>
+
 </body>
 </html>
