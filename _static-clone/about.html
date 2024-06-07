@@ -1,4 +1,5 @@
 <!--  Written by Sean Bost  -->
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,18 +10,26 @@
   <link rel="stylesheet" type="text/css" href="styles/_global.css">
   <link rel="stylesheet" href="https://use.typekit.net/mhr1izx.css">
 
-  <?php 
-    // dynamic body highlighting styling
-    include 'includes/highlighter.php';
-  ?>
-
+  <!-- conversion from original highlighter.php -->
+  <link rel="stylesheet" type="text/css" href="includes/highlighter.css">
+  <script src="includes/highlighter.js"></script>
 </head>
 
 <body>
 
   <!-- navbar component -->
   <nav>
-    <?php include 'includes/navbar.php';?>
+    <div class="grid">
+      <div id="nav-logo">
+        <a href="/index"><img src="assets/logo.png" width="151px" height="28px" alt="A simple logo reading Sean Bost"></a>
+      </div>
+
+      <div id="nav-links">
+        <h3 class="nav-item desktop-only"><a href="/index">Home</a></h3>
+        <h3 class="nav-item"><a href="/index#projects">Projects</a></h3>
+        <h3 class="nav-item"><a href="/about">About</a></h3>
+      </div>
+    </div>
   </nav>
 
   <!-- about content -->
@@ -92,34 +101,6 @@
       </p>
     </aside>
 
-    <?php // no need for this idea now -- currently more than long enough
-    
-    // <div class="center-narrow">
-    //   <h2 class="pink-expo">Some articles (blogs?):</h2>
-
-    //   <p>In case I haven't yapped enough, here's some topical write-ups with more focus:</p> 
-
-    //   <article>
-    //     <h3 class="underline"><a href="/index">Variety of roles and teams</a></h3> 
-    //     <p class="caption">here is some text about that and here is some more this could even be a now even bigger snippet that gets cut 
-    //       here is some more words and also text about that and here is some more this could even be a now even bigger snippet that gets cut-off...
-    //       <a href="/index" class="underline"> Read More</a>
-    //     </p>
-    //   </article>
-    //   <br>
-
-    //   <article>
-    //   <h3 class="underline"><a href="/index">My passion is UX</a></h3> 
-    //   <p class="caption">here is some text about that and here is some more this could even be a now even bigger snippet that gets cut 
-    //     here is some more words and also text about that and here is some more this could even be a now even bigger snippet that gets cut-off...
-    //     <a href="/index" class="underline"> Read More</a>
-    //   </p>
-    //   </article>
-    //   <br>
-
-    //   ... ...
-    ?>
-
     <aside class="center-wide">
       <img src="media/about/personal.png" width="100%" alt="Collage of personal photos">
       <div class="caption center">
@@ -131,7 +112,19 @@
 
   <!-- footer component -->
   <footer>
-    <?php include 'includes/footer.php';?>
+    <div class="grid">
+      <div id="footer-copyright">
+        <h3>Sean Bost ©2024</h3>
+      </div>
+
+      <div id="footer-links">
+        <h3 class="nav-item desktop-only"><a href="https://www.linkedin.com/in/seanbost" target="_blank">LinkedIn</a></h3>
+        <h3 class="nav-item"><a href="/Sean_Bost_Resume.pdf"  target="_blank">Resume</a></h3>
+        <h3 class="nav-item desktop-only"><a href="/index">Home</a></h3>
+        <h3 class="nav-item"><a href="/index#projects">Projects</a></h3>
+        <h3 class="nav-item"><a href="/about">About</a></h3>
+      </div>
+    </div>
   </footer>
 
 </body>

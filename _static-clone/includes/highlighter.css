@@ -1,0 +1,14 @@
+/* classes added dynamically via js script of same name */
+
+.gen-highlighting { 
+  border-radius: 3px;
+  font-weight: 600;
+  padding-left: 3px;
+  padding-right: 3px;
+  transition: .5s;
+}
+.red-highlighting     {background-color: var(--highlighter-red);}
+.blue-highlighting    {background-color: var(--highlighter-blue);}
+.orange-highlighting  {background-color: var(--highlighter-orange);}
+.green-highlighting   {background-color: var(--highlighter-green);}
+.pink-highlighting    {background-color: var(--highlighter-pink);}

@@ -1,5 +1,6 @@
 <!-- Written by Sean Bost -->
 <!-- Hey you! If you're reading this, let me know! seantbost@gmail.com linkedin.com/in/seanbost -->
+<!-- I'm not much of a GitHub guy, but you can check out these files in their original PHP before I cheaped out and made them static here: https://github.com/SeanBost/seanbost.com -->
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +18,17 @@
 
   <!-- navbar component -->
   <nav>
-    <?php include 'includes/navbar.php';?>
+    <div class="grid">
+      <div id="nav-logo">
+        <a href="/index"><img src="assets/logo.png" width="151px" height="28px" alt="A simple logo reading Sean Bost"></a>
+      </div>
+
+      <div id="nav-links">
+        <h3 class="nav-item desktop-only"><a href="/index">Home</a></h3>
+        <h3 class="nav-item"><a href="/index#projects">Projects</a></h3>
+        <h3 class="nav-item"><a href="/about">About</a></h3>
+      </div>
+    </div>
   </nav>
 
   <!-- header portion of document -->
@@ -86,7 +97,19 @@
 
   <!-- footer component -->
   <footer>
-    <?php include 'includes/footer.php';?>
+    <div class="grid">
+      <div id="footer-copyright">
+        <h3>Sean Bost ©2024</h3>
+      </div>
+
+      <div id="footer-links">
+        <h3 class="nav-item desktop-only"><a href="https://www.linkedin.com/in/seanbost" target="_blank">LinkedIn</a></h3>
+        <h3 class="nav-item"><a href="/Sean_Bost_Resume.pdf"  target="_blank">Resume</a></h3>
+        <h3 class="nav-item desktop-only"><a href="/index">Home</a></h3>
+        <h3 class="nav-item"><a href="/index#projects">Projects</a></h3>
+        <h3 class="nav-item"><a href="/about">About</a></h3>
+      </div>
+    </div>
   </footer>
 
 </body>
